@@ -1,13 +1,11 @@
 package repository
 
-import (
-	"todolist/models"
-)
+import "todolist/models"
 
-type TaskRepository interface {
-	DeleteTask(id uint) error
-	UpdateTask(task models.Task) error
-	CreateTask(task models.Task) error
-	GetTasks() ([]models.Task, error)
-	GetTaskByID(id uint) (*models.Task, error)
+type VehicleRepository interface {
+	DeleteVehicle(id uint) error
+	UpdateVehicle(vehicle models.Vehicle) error
+	CreateVehicle(vehicle models.Vehicle) error
+	GetVehicles() ([]models.Vehicle, error)
+	GetVehicleByID(id uint) (*models.Vehicle, error)
 }

@@ -2,9 +2,9 @@ package service
 
 import "todolist/models"
 
-type TaskService interface {
-	RegisterTask(models.Task) error
-	UpdateTask(models.Task) error
-	GetAllTask() ([]models.Task, error)
-	DeleteTask(string) error
+type VehicleService interface {
+	RegisterVehicle(models.Vehicle) error
+	UpdateVehicle(models.Vehicle) error
+	GetAllVehicle() ([]models.Vehicle, error)
+	DeleteVehicle(uint) error
 }
